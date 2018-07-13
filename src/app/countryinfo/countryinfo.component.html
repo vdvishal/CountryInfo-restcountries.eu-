@@ -1,0 +1,136 @@
+<div class="container-fluid custom2">
+  <app-loader *ngIf="showSpinner"></app-loader>
+  <div class="row align-items-center" *ngIf="country">
+    <div class="col-sm-12 col-md-12 ">
+      <img src="{{country.flag}}" alt="..." class="img-thumbnail size">
+    </div>
+    <div class="col-md-12 col-sm-12" style="text-align:center;color:white">
+      <h1> {{country.name}}</h1>
+    </div>
+  </div>
+  <br>
+  <div class="row custom">
+    <div class="col-md-4 col-sm-6">
+      <h3> Names</h3>
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <th scope="row">Common</th>
+            <td>{{country.name}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Common (Native)</th>
+            <td>{{country.nativeName}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Alternative spellings</th>
+            <td>{{country.altSpellings}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Currency</h3>
+      <table class="table table-bordered">
+        <tbody *ngFor="let currency of country.currencies">
+          <tr>
+            <th scope="row">Name</th>
+            <td>{{currency.name}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Symbol</th>
+            <td>{{currency.symbol}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Code</th>
+            <td>
+              <a [routerLink]="['/currency',(currency.code)]">{{currency.code}}</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <h3>Geography</h3>
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <th scope="row">Region</th>
+            <td>{{country.region}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Sub Region</th>
+            <td>{{country.subregion}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Demonym</th>
+            <td>{{country.demonym}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Lat/Lng</th>
+            <td>{{country.latlng}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Capital</th>
+            <td>{{country.capital}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Area</th>
+            <td>{{country.area}}km²</td>
+          </tr>
+          <tr>
+            <th scope="row">Timezone</th>
+            <td>{{country.timezones}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Population</th>
+            <td>{{country.population}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <h3>Languages</h3>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Names</th>
+            <th>Native Names</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let names of country.languages">
+            <th scope="row">{{names.name}}</th>
+            <td>
+              <a [routerLink]="['/lang',(names.iso639_1)]">{{names.nativeName}}</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Codes</h3>
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <th scope="row">International calling code</th>
+            <td>{{country.name}}</td>
+          </tr>
+          <tr>
+            <th scope="row">ISO 3166-1 alpha-2</th>
+            <td>{{country.alpha2Code}}</td>
+          </tr>
+          <tr>
+            <th scope="row">ISO 3166-1 alpha-3</th>
+            <td>{{country.alpha3Code}}</td>
+          </tr>
+          <tr>
+            <th scope="row">ISO 3166-1 numeric</th>
+            <td>{{country.numericCode}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Top level domain</th>
+            <td>{{country.topLevelDomain}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container-fluid custom">
+  <div class="row justify-content-center">
+
+    <div class="col-12" style="text-align:center;color:white">
+      <h3>Filtered By Currency</h3>
+    </div>
+    <app-loader *ngIf="showSpinner"></app-loader>
+    <div class="d-flex flex-column justify-content-center" *ngFor="let country of country" style="margin:1rem;">
+      <app-list-template [countryflag]="country.flag" [countryname]="country.name" [countrycapital]="country.capital" [countrycurrenciesname]="country.currencies[0].name"
+        [countrycurrenciescode]="country.currencies[0].code" [countryregion]="country.region" [countrysubregion]="country.subregion"
+        [countrytimezones]="country.timezones"></app-list-template>
+      <div>
+        <button type="button" class="btn btn-dark btn-lg btn-block more" [routerLink]="['/region',(country.region),(country.alpha3Code)]">More Info</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="container-fluid custom">
+  <div class="row justify-content-center">
+
+    <div class="col-12" style="text-align:center;color:white" *ngIf="region">
+      <h3>All Regions</h3>
+    </div>
+    <app-loader *ngIf="showSpinner"></app-loader>
+    <div class="d-flex flex-column justify-content-center" *ngFor="let info of region" style="margin:1rem;">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src={{info.img}} alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{info.region}}</h5>
+          <div>
+            <button type="button" class="btn btn-dark btn-lg btn-block more" [routerLink]="['/region',(info.region)]">List all Countries</button>
+          </div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,26 @@
+.size{
+  
+  background-image: url(assets/world-158234.jpg) 
+}
+
+.css {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  float: right;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #eff1f2;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  font: normal 12px/normal Verdana, Geneva, sans-serif;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: #040405;
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) ;
+  text-shadow: -1px -1px 0 rgba(15,73,168,0.66) ;
+}

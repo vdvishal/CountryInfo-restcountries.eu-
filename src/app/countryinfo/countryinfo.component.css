@@ -1,0 +1,45 @@
+.size{
+    /* width:35vw; */
+    height:50vh;
+    object-fit: cover;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+    
+}
+
+.table{
+ background-color:black
+}
+
+.cover{
+    padding:0;
+}
+
+
+.custom2 {
+    background-image: url(assets/world-1582347.jpg);
+    height:91.25vh;
+    /* background-size:cover; */
+    overflow: hidden;
+    overflow-y: scroll;
+    color:white
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+     background-image: url(/assets/world-158234.jpg); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

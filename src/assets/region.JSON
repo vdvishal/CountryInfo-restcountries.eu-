@@ -1,0 +1,22 @@
+[
+    {
+        "region": "Africa",
+       "img": "https://preview.ibb.co/hBGDxT/GLB_AF_02_4001.jpg"
+    },
+    {
+        "region": "Asia",
+       "img": "https://preview.ibb.co/kpgfcT/GLB_AS_02_4001.jpg"
+    },
+    {
+        "region": "Europe",
+       "img": "https://preview.ibb.co/cspYxT/GLB_EU_02_4001.jpg"
+    },
+    {
+        "region": "Americas",
+       "img": "https://preview.ibb.co/nDy448/GLB_AM_02_4001.jpg" 
+    },
+    {
+        "region": "Oceania",
+       "img": "https://preview.ibb.co/gwjoWo/GLB_OC_02_4001.jpg"
+    }
+]

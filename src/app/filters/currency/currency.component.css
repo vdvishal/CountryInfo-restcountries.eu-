@@ -1,0 +1,32 @@
+.custom {
+    background-image: url(assets/world-1582347.jpg);
+    height:91.25vh;
+    background-size:cover;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+     background-image: url(assets/world-1582347.jpg); 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.row{
+    width:99.5vw
+}
+
+.customB{
+    background: url(assets/world-158234.jpg);
+}
